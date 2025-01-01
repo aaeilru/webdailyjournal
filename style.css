@@ -1,0 +1,169 @@
+@media (max-width: 768px) {
+    .carousel-control-prev, .carousel-control-next {
+      width: 15%; /* Lebih besar pada layar kecil */
+      left: 5%;
+      right: 5%;
+    }
+    .carousel-inner img {
+      width: 80%; /* Lebih besar di layar kecil */
+    }
+  }
+
+
+a {
+  text-decoration: none;
+}
+  .carousel-inner img {
+    width: 50%; 
+    height: auto; 
+    margin: 0 auto; 
+  }
+
+  .carousel-control-prev, .carousel-control-next {
+      width: 10%; 
+      top: 50%;
+      transform: translateY(-50%); 
+      position: absolute;
+  }
+
+  .carousel-control-prev {
+      left: 22%; 
+  }
+
+  .carousel-control-next {
+      right: 22%; 
+  }
+
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px;
+      border-radius: 50%; 
+  }
+
+  .custom-background {
+      background-color: #f4f9f4;
+      background-size: cover;
+      background-position: center;
+  }
+
+  .card-custom {
+      border-radius: 15px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card-custom:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .card-img-top {
+      height: auto;
+      object-fit: cover;
+  }
+
+  .card-body, .card-footer {
+      border-radius: 0 0 15px 15px;
+  }
+
+.card-animated {
+    border-radius: 15px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #e0f7fa, #f4f9f4);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    position: relative;
+    color: #333;
+    will-change: transform, box-shadow;
+}
+
+.card-animated:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card-animated .card-img-top {
+    transition: transform 0.4s ease;
+}
+
+.card-animated:hover .card-img-top {
+    transform: scale(1.1);
+}
+
+.card-animated .card-body {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    transition: background 0.3s ease;
+}
+
+.card-animated:hover .card-body {
+    background: rgba(255, 255, 255, 1);
+}
+
+.card-animated a.text-dark {
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.card-animated a.text-dark:hover {
+    text-decoration: underline;
+}
+
+
+.text-bg {
+    background: #4bba4b;
+}
+
+.img-fluid {
+    object-fit: cover;
+  height: 300px;
+
+}
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+.profile-card {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    width: 100%;
+}
+.profile-image img {
+    border-radius: 50%;
+    border: 7px solid #f4f9f4;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+.profile-info {
+    text-align: center;
+}
+.profile-info h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+.profile-info small {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 20px;
+}
+.profile-info table {
+    width: 100%;
+    margin-top: 20px;
+    text-align: left;
+}
+.profile-info th, .profile-info td {
+    padding: 8px;
+}
+
