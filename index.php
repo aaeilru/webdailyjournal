@@ -112,67 +112,29 @@ include "koneksi.php";
 
      
     <!-- GALLERY -->
-     <section class="text-center p-5 custom-background" id="gallery">
+    <section class="text-center p-5 custom-background" id="gallery">
         <div class="container">
             <div>
                 <h1 class="fw-bold display-4 pb-3">GALLERY</h1>
             </div>
-            <div id="carouselExample" class="carousel slide">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="asset/gambar14.jpeg" class="d-block w-80" alt="">
+            <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+                <?php
+                $sql = "SELECT * FROM gallery ORDER BY tanggal DESC";
+                $hasil = $conn->query($sql);
+
+                while ($row = $hasil->fetch_assoc()) {
+                ?>
+                  <div class="col">
+                    <img src="asset/<?= $row["gambar"] ?>" class="img-fluid shadow-lg rounded w-75" alt="Gallery Image" />
                   </div>
-                  <div class="carousel-item">
-                    <img src="asset/gambar1.jpeg" class="d-block w-80" alt="">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="asset/gambar2.jpeg" class="d-block w-80" alt="">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="asset/gambar3.jpeg" class="d-block w-80" alt="">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="asset/gambar4.jpeg" class="d-block w-80" alt="">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="asset/gambar5.jpeg" class="d-block w-80" alt="">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="asset/gambar6.jpeg" class="d-block w-80" alt="">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="asset/gambar7.jpeg" class="d-block w-80" alt="">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="asset/gambar8.jpeg" class="d-block w-80" alt="">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="asset/gambar9.jpeg" class="d-block w-80" alt="">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="asset/gambar10.jpeg" class="d-block w-80" alt="">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="asset/gambar11.jpeg" class="d-block w-80" alt="">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="asset/gambar12.jpeg" class="d-block w-80" alt="">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="asset/gambar13.jpeg" class="d-block w-80" alt="">
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
+                <?php
+                }
+                ?>
+            </div>
         </div>
-     </section>
+    </section>
+
+
 
      <!-- SCHEDULE -->
      <section class="text-center p-5" id="schedule">

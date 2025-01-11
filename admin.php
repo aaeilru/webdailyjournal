@@ -20,7 +20,7 @@ if (!isset($_SESSION['username'])) {
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="icon" href="img/logo.png" />
     <link rel="stylesheet" href="style.css">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   </head>
 
 <body>
@@ -46,10 +46,7 @@ if (!isset($_SESSION['username'])) {
                 <a class="nav-link" href="admin.php?page=gallery">Gallery</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="admin.php?page=schedule">Schedule</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="admin.php?page=profile">Profile</a>
+                <a class="nav-link" href="admin.php?page=user">User</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle  fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -63,9 +60,7 @@ if (!isset($_SESSION['username'])) {
           </div>
         </div>
       </nav>
-
       <!-- nav end -->
-    <!-- content begin -->
     <!-- content begin -->
 <section id="content" class="p-5">
     <div class="container">
@@ -85,8 +80,6 @@ if (!isset($_SESSION['username'])) {
     </div>
 </section>
 <!-- content end -->
-    <!-- content end -->
-    <!-- footer begin -->
 
 <!-- FOOTER -->
   <footer class="text-center p-5 footer">
@@ -108,5 +101,10 @@ if (!isset($_SESSION['username'])) {
         &copy; All Rights Reserved By Aurelia DW 2024
     </div>
   </footer>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+    ></script>
 </body>
 </html> 

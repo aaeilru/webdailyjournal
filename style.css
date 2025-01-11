@@ -1,124 +1,78 @@
-@media (max-width: 768px) {
-    .carousel-control-prev, .carousel-control-next {
-      width: 15%; /* Lebih besar pada layar kecil */
-      left: 5%;
-      right: 5%;
-    }
-    .carousel-inner img {
-      width: 80%; /* Lebih besar di layar kecil */
-    }
-  }
-
-
+/* Global Styles */
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
-  .carousel-inner img {
-    width: 50%; 
-    height: auto; 
-    margin: 0 auto; 
-  }
 
-  .carousel-control-prev, .carousel-control-next {
-      width: 10%; 
-      top: 50%;
-      transform: translateY(-50%); 
-      position: absolute;
-  }
-
-  .carousel-control-prev {
-      left: 22%; 
-  }
-
-  .carousel-control-next {
-      right: 22%; 
-  }
-
-  .carousel-control-prev-icon, .carousel-control-next-icon {
-      background-color: rgba(0, 0, 0, 0.5);
-      padding: 10px;
-      border-radius: 50%; 
-  }
-
-  .custom-background {
-      background-color: #f4f9f4;
-      background-size: cover;
-      background-position: center;
-  }
-
-  .card-custom {
-      border-radius: 15px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-
-  .card-custom:hover {
-      transform: scale(1.05);
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-  }
-
-  .card-img-top {
-      height: auto;
-      object-fit: cover;
-  }
-
-  .card-body, .card-footer {
-      border-radius: 0 0 15px 15px;
-  }
-
-.card-animated {
-    border-radius: 15px;
-    overflow: hidden;
-    background: linear-gradient(135deg, #e0f7fa, #f4f9f4);
+/* Carousel */
+.carousel-inner img {
+    width: 50%; /* Default */
+    height: auto;
+    margin: 0 auto;
     transition: transform 0.4s ease, box-shadow 0.4s ease;
-    position: relative;
-    color: #333;
-    will-change: transform, box-shadow;
 }
-
-.card-animated:hover {
-    transform: translateY(-10px) scale(1.05);
+.carousel-inner img:hover {
+    transform: scale(1.1);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
+.carousel-control-prev, .carousel-control-next {
+    width: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+}
+.carousel-control-prev {
+    left: 22%;
+}
+.carousel-control-next {
+    right: 22%;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 50%;
+}
 
+/* Media Queries */
+@media (max-width: 768px) {
+    .carousel-control-prev, .carousel-control-next {
+        width: 15%;
+        left: 5%;
+        right: 5%;
+    }
+    .carousel-inner img {
+        width: 80%; /* Lebih besar di layar kecil */
+    }
+}
+
+/* Cards */
+.card-custom, .card-animated {
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+.card-custom:hover, .card-animated:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
 .card-animated .card-img-top {
     transition: transform 0.4s ease;
 }
-
 .card-animated:hover .card-img-top {
     transform: scale(1.1);
 }
 
-.card-animated .card-body {
-    background: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    transition: background 0.3s ease;
-}
-
-.card-animated:hover .card-body {
-    background: rgba(255, 255, 255, 1);
-}
-
-.card-animated a.text-dark {
-    font-weight: 500;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.card-animated a.text-dark:hover {
-    text-decoration: underline;
-}
-
-
-.text-bg {
-    background: #4bba4b;
-}
-
+/* Images */
 .img-fluid {
     object-fit: cover;
-  height: 300px;
-
+    height: 400px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.img-fluid:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
+/* Profile */
 .profile-container {
     display: flex;
     justify-content: center;
@@ -166,4 +120,3 @@ a {
 .profile-info th, .profile-info td {
     padding: 8px;
 }
-
