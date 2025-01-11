@@ -110,9 +110,13 @@ a {
 
 
 .img-fluid {
-object-fit: cover;
-  height: 300px;
-
+    object-fit: cover;
+    height: 300px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.img-fluid:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
 .profile-container {
