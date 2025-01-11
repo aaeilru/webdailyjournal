@@ -55,15 +55,14 @@ include "koneksi.php";
      <section class="text-center p-5 custom-background text-sm-start" id="hero">
         <div class="container">
             <div class="d-sm-flex flex-sm-row-reverse align-items-center ">
-                <img class="img-fluid" width="400" src="asset/gambar13.jpeg">
+                <img class="img-fluid" width="300" src="asset/gambar13.jpeg">
                 <div>
                     <h1 class="fw-bold display">HAI</h1>
                     <h4 class="lead display-8">
                     <p>
                         Selamat datang di buku catatan online milik <b>Aurelia Dwi Wijayanti</b>, seorang mahasiswa yang tengah meniti
-                        <br>perjalanan akademik untuk meraih gelar Sarjana di program studi <b>Teknik Informatika</b> di Universitas Dian Nuswantoro, Semarang. 
-                    </p>
-                    <p>
+                        perjalanan akademik untuk meraih gelar Sarjana di program studi <b>Teknik Informatika</b> di Universitas Dian Nuswantoro, Semarang. 
+                  
                         Di sini, Aurelia berbagi catatan perjalanan kuliahnya, dari tugas-tugas menantang hingga pengalaman belajar yang berharga.
                     </p>
                     </h4>
